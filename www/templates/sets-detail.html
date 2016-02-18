@@ -1,0 +1,32 @@
+<ion-nav-bar>
+  <ion-nav-back-button class="button-clear">
+    <i class="ion-arrow-left-c"></i> Back
+  </ion-nav-back-button>
+</ion-nav-bar>
+<ion-view view-title="Cards">
+  <ion-content>
+    <ion-list>
+      <ion-item>
+      <ion-item ng-repeat="s in set">
+        <ion-item ng-repeat="card in s.cards" ng-click="goto('tab.card')" ng-href="#/tab/card/{{card.multiverseid}}" ng-switch="card.colors">
+       		<a ng-switch-when="Blue" class="button button-positive button-full">{{card.name}}</a>
+       		<a ng-switch-when="Black" class="button button-dark button-full">{{card.name}}</a>
+       		<a ng-switch-when="White" class="no-padding button button-energized button-block">{{card.name}}</a>
+        	<a ng-switch-when="Red" class="button button-assertive button-full">{{card.name}}</a>
+          <a ng-switch-when="Green" class="button button-balanced button-full">{{card.name}}</a>
+          <div ng-switch-default>
+            <span ng-switch="!card.colors">
+              <button ng-switch-when="false" class="button button-royal button-full">{{card.name}}</button>
+              <div ng-switch-default>
+                <span ng-switch="card.types">
+                  <button ng-switch-when="Land" class="button button-calm button-full">{{card.name}}</button>
+                  <button ng-switch-default class="button button-full">{{card.name}}</button>
+                </span>
+              </div>
+            </span>
+          </div>
+        </ion-item>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

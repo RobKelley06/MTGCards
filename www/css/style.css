@@ -1,0 +1,9 @@
+/* Empty. Add your own CSS if you like */
+.item-complex .item-content, .item {
+	padding: 0px 1px 0px 1px !important;;
+    background-color: #000 !important;
+    color: white !important;;
+}
+.pane, .item  {
+    background-color: #000;
+}

@@ -1,0 +1,20 @@
+<ion-view view-title="Sets">
+  <ion-content>
+  	<ion-list>
+     	<ion-item ng-repeat="set in sets" href="#/tab/sets/{{set.code}}" ng-switch="!set.gathererCode">
+     		<button class="button button-dark button-full">
+     			<img ng-switch-default
+     				src="http://gatherer.wizards.com/Handlers/Image.ashx?type=symbol&set={{set.code}}&size=small&rarity=R">
+     			<img ng-switch-when="false"
+     			   src="http://gatherer.wizards.com/Handlers/Image.ashx?type=symbol&set={{set.gathererCode}}&size=small&rarity=R">
+
+  				{{set.name}}
+
+     			<img ng-switch-default
+     				src="http://gatherer.wizards.com/Handlers/Image.ashx?type=symbol&set={{set.code}}&size=small&rarity=R">
+     			<img ng-switch-when="false"
+     			   src="http://gatherer.wizards.com/Handlers/Image.ashx?type=symbol&set={{set.gathererCode}}&size=small&rarity=R">
+  			</button>
+  		</ion-item>
+  </ion-content>
+</ion-view>
