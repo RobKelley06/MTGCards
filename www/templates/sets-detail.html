@@ -57,22 +57,7 @@
             </span>
           </div>
         </ion-item>
-      </ion-item>      
-      <ion-item ng-repeat="c in card" class="item-text-wrap">
-        <table width=100%>
-          <tr><td colspan=3 align=center>
-            <img ng-src="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid={{c.multiverseid}}&type=card">
-          </td></tr>
-          <tr><td width=30%>Card name:    </td><td>{{c.name}}         </td></tr>
-          <tr><td>Mana Cost:    </td><td>{{c.manaCost}}       </td></tr>
-          <tr><td>Types:        </td><td>{{c.type}}         </td></tr>
-          <tr><td>P/T:          </td><td>{{c.power}}/{{c.toughness}}  </td></tr>
-          <tr><td>Rarity:       </td><td>{{c.rarity}}         </td></tr>
-          <tr><td>Artist:       </td><td>{{c.artist}}         </td></tr>
-          <tr><td>Card Text:    </td><td>{{c.text}} </td></tr>
-          <tr><td>Flavor Text:  </td><td>{{c.flavor}} </td></tr>
-        </table>
-      </ion-item>
+      </ion-item>   
     </ion-list>
   </ion-content>
 </ion-view>

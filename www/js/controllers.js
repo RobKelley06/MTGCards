@@ -10,6 +10,7 @@ angular.module('starter.controllers', [])
     }, set);
     $scope.set = set;
 
+    /*
     var card = [];
     if (set.length == 0) {
       angular.forEach($scope.sets, function(value, key) {
@@ -20,7 +21,7 @@ angular.module('starter.controllers', [])
     }
     $scope.card = card;
 
-
+    */
 
 
 
@@ -31,8 +32,9 @@ angular.module('starter.controllers', [])
 })
 
 
-/*
+
 .controller('CardsCtrl', function($scope, $http, $state) {
+  console.log("test");
   $http.get('js/AllSets.json').then(function(resp) {
     $scope.sets = resp.data;
     $scope.curData = $state.params.setID;
@@ -46,7 +48,7 @@ angular.module('starter.controllers', [])
     console.log($scope.card);
   })
 })
-*/
+
 
 
 
