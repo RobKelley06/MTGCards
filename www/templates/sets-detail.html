@@ -10,46 +10,46 @@
         <ion-item ng-repeat="card in s.cards"  ng-switch="card.colors">
        		<a ng-switch-when="Blue" 
             class="button button-positive button-full" 
-            ng-href="/#/tab/sets/{{card.multiverseid}}">
+            ng-href="/#/tab/card/{{card.multiverseid}}">
               {{card.name}}
           </a>
        		<a ng-switch-when="Black" 
             class="button button-dark button-full" 
-            ng-href="/#/tab/sets/{{card.multiverseid}}">
+            ng-href="/#/tab/card/{{card.multiverseid}}">
               {{card.name}}
           </a>
        		<a ng-switch-when="White" 
             class="no-padding button button-energized button-block" 
-            ng-href="/#/tab/sets/{{card.multiverseid}}">
+            ng-href="/#/tab/card/{{card.multiverseid}}">
               {{card.name}}
           </a>
         	<a ng-switch-when="Red" 
             class="button button-assertive button-full" 
-            ng-href="/#/tab/sets/{{card.multiverseid}}">
+            ng-href="/#/tab/card/{{card.multiverseid}}">
               {{card.name}}
           </a>
           <a ng-switch-when="Green" 
             class="button button-balanced button-full" 
-            ng-href="/#/tab/sets/{{card.multiverseid}}">
+            ng-href="/#/tab/card/{{card.multiverseid}}">
               {{card.name}}
           </a>
           <div ng-switch-default>
             <span ng-switch="!card.colors">
               <a ng-switch-when="false" 
                 class="button button-royal button-full" 
-                ng-href="/#/tab/sets/{{card.multiverseid}}">
+                ng-href="/#/tab/card/{{card.multiverseid}}">
                   {{card.name}}
               </a>
               <div ng-switch-default>
                 <span ng-switch="card.types">
                   <a ng-switch-when="Land" 
                     class="button button-calm button-full" 
-                    ng-href="/#/tab/sets/{{card.multiverseid}}">
+                    ng-href="/#/tab/card/{{card.multiverseid}}">
                       {{card.name}}
                   </a>
                   <a ng-switch-default 
                     class="button button-full" 
-                    ng-href="/#/tab/sets/{{card.multiverseid}}">
+                    ng-href="/#/tab/card/{{card.multiverseid}}">
                       {{card.name}}
                   </a>
                 </span>
